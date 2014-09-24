@@ -1,0 +1,4 @@
+rafael_santiago_spotify:
+    resource: "@RafaelSantiagoSpotifyBundle/Resources/config/routing.yml"
+    prefix:   /
+

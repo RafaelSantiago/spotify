@@ -1,0 +1,4 @@
+services:
+#    rafael_santiago_spotify.example:
+#        class: RafaelSantiago\SpotifyBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

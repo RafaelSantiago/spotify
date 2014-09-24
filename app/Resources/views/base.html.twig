@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spotify Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% block header %}
+        <link href="{{ asset ('bundles/rafaelsantiagospotify/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" media="screen">
+    {% endblock %}
+
+</head>
+<body>
+
+    {% block content %}
+    {% endblock %}
+
+    {% block javascripts %}
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <script src="{{ asset ('bundles/rafaelsantiagospotify/bootstrap/js/bootstrap.min.js') }}"></script>
+    {% endblock %}
+
+</body>
+</html>

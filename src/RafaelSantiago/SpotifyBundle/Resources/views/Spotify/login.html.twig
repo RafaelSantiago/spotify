@@ -1,0 +1,12 @@
+{% extends '::base.html.twig' %}
+
+{% block content %}
+
+    <div class="row">
+        <div class="col-lg-4 col-lg-offset-4 block text-center">
+            <br/>
+            <a href="https://accounts.spotify.com/authorize/?client_id=eb6abf4bdf8f4699bc8d185e15279589&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%2Fspotify%2Fweb%2Fapp_dev.php%2Flogin%2Freturn&scope=user-read-private%20user-read-email%20playlist-read-private"><img src="{{ asset('bundles/rafaelsantiagospotify/img/log-in-spotify.png') }}" /></a>
+        </div>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,11 @@
+rafael_santiago_spotify_login:
+    path:     /login
+    defaults: { _controller: RafaelSantiagoSpotifyBundle:Spotify:login }
+
+rafael_santiago_spotify_login_return:
+    path:     /login/return
+    defaults: { _controller: RafaelSantiagoSpotifyBundle:Spotify:loginReturn }
+
+rafael_santiago_spotify_playlists:
+    path:     /playlists
+    defaults: { _controller: RafaelSantiagoSpotifyBundle:Spotify:playlists }
