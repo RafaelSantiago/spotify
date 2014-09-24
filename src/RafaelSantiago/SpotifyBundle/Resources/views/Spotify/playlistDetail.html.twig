@@ -1,0 +1,31 @@
+{% extends '::base.html.twig' %}
+
+{% block content %}
+
+    <div class="row">
+        <div class="col-lg-4 col-lg-offset-4 block">
+            <br/>
+            <a class="btn btn-primary" href="{{ path('rafael_santiago_spotify_playlists') }}"><i class="glyphicon glyphicon-backward"></i> Voltar</a><br/>&nbsp;
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h4>Nome da Lista</h4>
+                </div>
+                <div class="panel-body">
+                    <table class="table">
+                        {% for track in tracks %}
+                            <tr>
+                                <td>
+                                    {% for artist in track.track.artists %}
+                                        {{ artist.name }}&nbsp;
+                                    {% endfor %}
+                                </td>
+                                <td>{{ track.track.name }}</td>
+                            </tr>
+                        {% endfor %}
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

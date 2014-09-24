@@ -3,9 +3,21 @@
 {% block content %}
 
     <div class="row">
-        <div class="col-lg-4 col-lg-offset-4 block text-center">
+        <div class="col-lg-4 col-lg-offset-4 block">
             <br/>
-            Playlists
+            <div class="panel panel-primary">
+                <div class="panel-heading"><h4>Playlists</h4></div>
+                <div class="panel-body">
+                    <table class="table">
+                        {% for lista in listas %}
+                            <tr>
+                                <td><a href="{{ path('rafael_santiago_spotify_playlist_detail',{'owner_id': lista.owner.id, 'list_id': lista.id}) }}">{{ lista.name }}</a></td>
+                                <td>{{ lista.tracks.total }}</td>
+                            </tr>
+                        {% endfor %}
+                    </table>
+                </div>
+            </div>
         </div>
     </div>
 

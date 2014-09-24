@@ -9,3 +9,7 @@ rafael_santiago_spotify_login_return:
 rafael_santiago_spotify_playlists:
     path:     /playlists
     defaults: { _controller: RafaelSantiagoSpotifyBundle:Spotify:playlists }
+
+rafael_santiago_spotify_playlist_detail:
+    path:     /playlists/{owner_id}/{list_id}
+    defaults: { _controller: RafaelSantiagoSpotifyBundle:Spotify:playlistDetail }
